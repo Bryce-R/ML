@@ -1,0 +1,9 @@
+*.data
+*.gz
+*.idx1-ubyte
+*.idx3-ubyte
+*.pyc
+.gitignore~
+stanford_dl_ex-master/
+console_test.py
+
