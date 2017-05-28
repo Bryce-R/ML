@@ -50,7 +50,7 @@ def LogisticRegression(train_x,train_y,test_x,test_y):
     alpha = 5e-5
     theta = np.random.rand(n,1)*0.001
     ct = 0
-    maxIter = 100
+    maxIter = 200
     # Prev_train_obej = float('Inf')
     while (ct < maxIter):
         ct += 1
@@ -65,7 +65,7 @@ def LogisticRegression(train_x,train_y,test_x,test_y):
             print ("Converged. Iteration: {}. Training set objective function: {} . \n").format(ct, train_obej)
             break
         Prev_train_obej = train_obej
-        print ( 'Iteration {}: Training set objective function: {} \r'.format(ct, train_obej) )
+        # print ( 'Iteration {}: Training set objective function: {} \r'.format(ct, train_obej) )
         # sys.stdout.flush()
         # sys.stdout.write( 'Iteration {}: Train set objective function: {} \r'.format(ct, train_obej) )
         Gradient = np.dot(train_x.T, (y_hat - train_y) )
