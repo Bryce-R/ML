@@ -81,11 +81,6 @@ def LogisticRegression(train_x,train_y,test_x,test_y):
 
 
 
-
-
-
-
-
 cwd = os.getcwd()
 # "training" or "testing" 
 train_images = read("training",cwd)
