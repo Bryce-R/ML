@@ -4,6 +4,7 @@
 *.idx3-ubyte
 *.pyc
 .gitignore~
+*.md~
 stanford_dl_ex-master/
 console_test.py
 

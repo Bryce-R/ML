@@ -68,11 +68,11 @@ def LogisticRegression(train_x,train_y,test_x,test_y):
         # print ( 'Iteration {}: Training set objective function: {} \r'.format(ct, train_obej) )
         # sys.stdout.flush()
         # sys.stdout.write( 'Iteration {}: Train set objective function: {} \r'.format(ct, train_obej) )
-        Gradient = np.dot(train_x.T, (y_hat - train_y) )
+        Gradient = np.dot(train_x.T, (train_y - y_hat) )
         # pdb.set_trace()
         # GradCheck(train_x,train_y, theta, Gradient)
         # pdb.set_trace()
-        theta += -(alpha * Gradient)
+        theta += (alpha * Gradient)
         assert theta.shape == (n,1)
     # print binary_classifier_acuracy(theta, train_x, train_y)
     print ""
