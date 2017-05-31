@@ -4,7 +4,7 @@
 * Logistic Regression
 * Softmax Regression
 
-* Useful Links: 
+- Useful Links: 
   + Deep Learning tutorial:
   http://ufldl.stanford.edu/tutorial/supervised/LogisticRegression/ 
   + MNIST dataset:
